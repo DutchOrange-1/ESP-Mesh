@@ -8,14 +8,15 @@ the mac address can be sent and the current number of nodes connected to the mes
 This code is very similar from the basic router, the only diffrence is that its checking when the number of nodes increase or decrease.
 
 
-`int number_of_nodes = esp_mesh_get_total_node_num() ; 
+```
+int number_of_nodes = esp_mesh_get_total_node_num() ; 
        // printf("Number of Nodes = %d \n",number_of_nodes); 
         vTaskDelay(500 / portTICK_RATE_MS); 
         if (number_of_nodes < prevoius_amount_of_nodes)     
         {
             printf("A node has left the system, \nSending email to admin... \n");
             prevoius_amount_of_nodes = number_of_nodes; 
-            ` `
+            
             gpio_set_level(NODE_DISCONECTING_, 1);
             vTaskDelay(5000 / portTICK_RATE_MS); 
             gpio_set_level(NODE_DISCONECTING_, 0);
@@ -29,4 +30,4 @@ This code is very similar from the basic router, the only diffrence is that its 
             gpio_set_level(NODE_CONECCTING_, 0);
 
         }
-        `
+        ```
