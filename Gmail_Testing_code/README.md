@@ -6,4 +6,4 @@ the mac address can be sent and the current number of nodes connected to the mes
 
 ## The router using the ESP32
 This code is very similar from the basic router, the only diffrence is that its checking when the number of nodes increase or decrease.
-< hello >
+`<hello>` 
