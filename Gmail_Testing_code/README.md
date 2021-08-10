@@ -4,7 +4,7 @@ https://randomnerdtutorials.com/esp8266-nodemcu-send-email-smtp-server-arduino/
 **THIS CODE IS NOT OPTOMISED** This was just quickly setup for basic testing... This should be updated in the future and use **Serial Communication** so 
 the mac address can be sent and the current number of nodes connected to the mesh can also be sent. 
 
-10/08/2021
+__10/08/2021__
 **Code is now better**
 The code has now included basic serial communiucation. The only conections needed are TX -> RX (To the smpt server). The code just scans through it for a pecific message
 such as **&$&** for when a node joins and **$#$** when a node leavs. 
