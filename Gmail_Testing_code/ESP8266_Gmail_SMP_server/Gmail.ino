@@ -34,18 +34,18 @@ char nodes_number = 0, layer_number = 0, routing_table_size = 0;
 #endif
 #include <ESP_Mail_Client.h>
 
-#define WIFI_SSID "Ubuntu_Wifi"
-#define WIFI_PASSWORD "Linux2021"
+#define WIFI_SSID "Wifi name"
+#define WIFI_PASSWORD "Password"
 
 #define SMTP_HOST "smtp.gmail.com"
 #define SMTP_PORT 465
 
 /* The sign in credentials */
-#define AUTHOR_EMAIL "esp.b3d@gmail.com"
-#define AUTHOR_PASSWORD "Br@nd0nmac"
+#define AUTHOR_EMAIL "The email sending the messages"
+#define AUTHOR_PASSWORD "email password"
 
 /* Recipient's email*/
-#define RECIPIENT_EMAIL "bdegreef5@gmail.com"
+#define RECIPIENT_EMAIL "reciving email"
 
 /* The SMTP Session object used for Email sending */
 SMTPSession smtp;
